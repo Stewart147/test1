@@ -1,0 +1,274 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+     body {
+       background-color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        height: 100vh;
+        width: 100vw;
+     }
+
+     /* header styles */
+
+    header {
+           display: flex;
+             background-color: #f1f1f1;
+             padding: 10px;    
+            } 
+
+    .logo {
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+        font-family: roboto, sans-serif;
+        margin-left: 20px;
+        margin: 20px; 
+   }
+
+   .btn {
+    height: 60px;
+    width: 70px;
+    padding: 6px;
+    margin: 10px;
+}
+
+   
+
+    /*  Navigation Styles   */
+
+.navTop {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: lightgrey;
+    color: black;
+}
+
+.navTop ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.navTop li {
+    margin: 15px;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navTop a {
+    font-family: "Montserrat" sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.navTop a:hover {
+    color: white;
+    border-bottom: 2px solid #e6e6e6;
+
+}
+
+/* main section styles */
+
+section {
+    height: auto;
+    width: 800px;
+    border: 1px solid blue;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    color: #1b1b20;
+    padding-bottom: 40px;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #a7a1a1;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #e6e6e6;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.intro {
+  background-color: #e6e6e6;
+  border: 1px solid red;
+  color: black;
+  padding: 20px;
+  margin: 20px 0;
+
+}
+
+
+
+/* Footer Section Styles  */
+
+footer {
+    background-color: lightgrey;
+    padding: 40px 0;
+    color: black;
+}
+
+.footer-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.links a {
+    color: darkslategrey;
+    text-decoration: none;
+    transform: color 0.3s;
+}
+
+.links a:hover {
+    color: blue;
+    text-decoration: none;
+    transform: color 0.3s;
+}
+
+.social {
+    margin-top: 0;
+}
+
+.social a {
+    color:darkslategrey;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: blue;
+}
+
+/* Dark Mode Styles */
+
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+header.dark-mode {
+    background-color: #444444;
+}
+
+.logo.dark-mode {
+    color: white;
+}
+
+button.dark-mode {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.navTop.dark-mode {
+    background-color: #333333;
+}
+
+.navTop.dark-mode li {
+    background-color: yellow;
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navTop.dark-mode a {
+    background-color: white;
+    padding-bottom: 5px;
+}
+
+.navTop.dark-mode a:hover {
+    background-color: orange;
+}
+
+h1.dark-mode {
+    color: #f1f1f1;
+}
+ 
+ 
+.intro.dark-mode {
+    background-color: #333333;
+    color: white;
+    border: 2px solid cyan;
+}
+
+footer.dark-mode {
+    background-color: #1b1b20;
+    padding: 40px 0;
+    color: #e6e6e6;
+}
+
+.links.dark-mode a {
+    color: white;
+    text-decoration: none;
+    transform: color 0.3s;
+}
+
+.links.dark-mode a:hover {
+    color: yellow;
+    text-decoration: none;
+    transform: color 0.3s;
+}
+
+.social a.dark-mode {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social.dark-mode a:hover {
+    color: yellow;
+}
+
+/* resizing for mobile devices */
+
+    @media screen and (max-width:600px) {
+
+ .container { 
+     display: flex;
+     flex-direction: column;
+     max-width: 500px;
+ }
+
+ .navTop a {
+     font-size: 12px;
+ } 
+
+  header, .navTop, footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+ }
+
+ section {
+    max-width: 400px;
+     margin: 10px 10px;
+ }
+
+ }

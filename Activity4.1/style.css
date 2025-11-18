@@ -1,0 +1,106 @@
+   body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            background-color: blue;
+            margin: 0;
+        }
+
+ 
+
+        .container {
+
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 800px;
+            text-align: center;
+        }
+
+ 
+
+        .inputField {
+            flex: 1;
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+ 
+
+        .btn {
+            padding: 10px;
+            border: none;
+            background-color: #23c048;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+ 
+
+        .btn:hover {
+            background-color: #12eb41;
+            border: 1px solid black;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+ 
+
+        li {
+            background-color: #eee;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+ 
+
+        li .task-content {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex: 1;
+        }
+
+ 
+
+        li label {
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+ 
+
+        li .task-text {
+            flex: 1;
+            text-align: left;
+        }
+
+ 
+
+        li button {
+            border: none;
+            background-color: #dc3545;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+ 
+
+        li button:hover {
+            background-color: #c82333;
+        }
