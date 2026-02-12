@@ -40,7 +40,7 @@ import failedImage from './images/parrot1.png';
         Reset Counts
       </button>
 
-      {/* pass result, count and handleIncrement function values to TicketInfo.js */}
+      {/* pass result, count and handleIncrement function values to TicketInfo.js using props */}
 
       <TicketInfo
         result="completed"
@@ -55,7 +55,7 @@ import failedImage from './images/parrot1.png';
         <p>Tickets Completed</p>
       </TicketInfo>
 
-      {/* pass result, count and handleIncrement function values to TicketInfo.js */}
+      {/* pass result, count and handleIncrement function values to TicketInfo.js using props */}
 
       <TicketInfo
         result="in-progress"
@@ -63,13 +63,13 @@ import failedImage from './images/parrot1.png';
         onClick={() => handleIncrement("in-progress")}
       >
 
-       {/* pass image and <p> text as children to TicketInfo.js */}
+       {/* pass image and <p> text as children to TicketInfo.js  */}
 
         <img src={inProgressImage} alt="In Progress" width={100} height={100} />
         <p>Tickets In Progress</p>
       </TicketInfo>
 
-      {/* pass result, count and handleIncrement function values to TicketInfo.js */}
+      {/* pass result, count and handleIncrement function values to TicketInfo.js using props */}
 
       <TicketInfo
         result="failed"
@@ -89,3 +89,4 @@ import failedImage from './images/parrot1.png';
 };
 
 export default StatusBoard;
+
