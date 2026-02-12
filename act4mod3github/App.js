@@ -1,75 +1,85 @@
-import './App.css';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import JobList from './components/JobList';
 
-// set up state variables for input, input list and error message
+const App = () => {
 
-const DynamicForm = () => {
-  let [inputval, setInputValue] = useState("");
-  // uses an array to map out state value
-  let [inputlist, setInputList] = useState([]);
-  let [error, setError] = useState(""); 
+  const [newJob, setNewJob] = useState({id:'', name:'', status:''})
 
-  const MIN_LENGTH = 3;
 
-  const handleInputChange = (event) => {
-    const value = event.target.value;
-    setInputValue(value);
+  const [jobs, setJobValues] = useState([
+    { id: 1, name: 'Email Extractor', status: 'running' },
+    { id: 2, name: 'Data Analyzer', status: 'completed' },
+    { id: 3, name: 'Report Generator', status: 'running' }
+  ]);
 
-    // clear error as user types valid input
-    if (value.length >= MIN_LENGTH) {
-      setError("");
-    }
+    // Error state for validation
+    const [error, setError] = useState('');
+
+    const [searchQuery, setSearchQuery] = useState('');
+
+
+  // delete jobs function
+  const handleDeleteJob = (id) => {
+    setJobValues(jobs.filter(job => id !== job.id))
   };
 
-  const handleReset = () => {
-    setInputValue("");
-    setError("");
-  };
+  
+  // add jobs with error prompt function
+     const addJobToList = () => {
+        if (
+           newJob.id.trim() === '' ||
+           newJob.name.trim() === '' ||
+           newJob.status.trim() === ''
+        ) {
+          setError('All fields are required');
+          return;
+  }
 
-  const handleInputList = () => {
-    if (inputval.length < MIN_LENGTH) {
-      setError(`Input must be at least ${MIN_LENGTH} characters long`);
-      return;
-    }
+  setError('');
+  setJobValues([...jobs, { ...newJob, id: Number(newJob.id) }]);
+  setNewJob({ id: '', name: '', status: '' });
+};
 
-    setInputList([...inputlist, inputval]);
-    setInputValue("");
-    setError("");
-  };
+
+
+  // Filter jobs function
+  const filteredJobs = jobs.filter(job => {
+    const query = searchQuery.toLowerCase();
+
+    return (
+      job.id.toString().includes(query) ||
+      job.name.toLowerCase().includes(query) ||
+      job.status.toLowerCase().includes(query)
+    );
+  });
+
+  // render search and add job input fields
 
   return (
-    <div>
-      <h1>Dynamic Form</h1>
 
+    <div className="app">
+      <h1>Job Board</h1>
+
+       {/* Search */}
       <input
         type="text"
-        value={inputval}
-        onChange={handleInputChange}
-        placeholder="Type something..."
+        placeholder="Search by id, name or status..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
       />
 
-      <button onClick={handleReset}>Reset</button>
+   <input type='number' value={newJob.id} onChange = {(e) => setNewJob({...newJob,id:e.target.value})} placeholder='Enter ID' />
+   <input type='text' value={newJob.name} onChange = {(e) => setNewJob({...newJob,name:e.target.value})} placeholder='Enter name' />
+   <input type='text' value={newJob.status} onChange = {(e) => setNewJob({...newJob,status:e.target.value})} placeholder='Enter Status' />
 
-      <div>
-        <h2>Current Input</h2>
-        <p>{inputval}</p>
-        <p>characters: {inputval.length}</p>
-
-        <button onClick={handleInputList}>Submit</button>
-
-        {/* Error Message */}
-        {error && <p style={{ color: "red" }}>{error}</p>}
-
-        <p>Input List:</p>
-        {/* display list using map */}
-        <ul>
-          {inputlist.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      </div>
+       {/* Validation error message */}
+      {error && <p style={{ color: 'red' }}>{error}</p>}
+ 
+      <button onClick={addJobToList}>Add Jobs</button>
+      {/* pass in jobs and onDelete function values to JobList.js */}
+     <JobList jobs={filteredJobs} onDeleteJob={handleDeleteJob} /> 
     </div>
   );
 };
 
-export default DynamicForm;
+export default App;
