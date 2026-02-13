@@ -1,0 +1,33 @@
+/*  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: left;
+}
+
+.status-board {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  font-family: Arial, sans-serif
+}
+
+.headtop {
+  border: 1px solid black;
+}
+
+.headerfunc {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0px 0px 0px;
+  padding: 30px 8%;
+}
+
+.columns1 {
+  width: 33.33%;
+  background-color: #f8d7da;
+  margin: 40px;
+} */
