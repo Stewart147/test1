@@ -1,0 +1,223 @@
+
+
+ .light .container {
+    font-family: Arial, sans-serif;
+    background: #bba9a9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+
+  .form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    /* width: 90%; */
+    max-width: 500px;
+    display: grid;
+   /* grid-template-columns: 30% 30% 30%; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 10px; 
+  }
+
+  .A {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  .B {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .C {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .D {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+
+.E {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-right: 10px;
+  }
+
+
+  .F {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+
+  input {
+    font-size: 23px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+} 
+
+input:focus {
+    border: 3px solid blue;
+    background-color: yellow;
+} 
+
+  
+  .tag {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background: #3498db;
+    color: white;
+    border: none;
+    width: 100%;
+    align-items: center;
+  }
+
+  .tag:hover {
+    background: #2980b9;
+  }
+
+  .job-status {
+    font-size: 14px;
+    border: 1px solid #999;
+    height: 40px;
+    padding: 0 5px;
+    width: 100%;
+}
+
+
+  .submit-data {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: brown;
+    color: #fff;
+    border-radius: 5px;
+    height: 50px; 
+    width: 40%;
+    padding: 7px 15px;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.submit-data:hover {
+    background-color: hsl(0, 59%, 61%);
+    transition: 0.3s ease;
+} 
+
+
+
+
+   @media screen and (max-width: 600px) {
+
+    input {
+        width: 80%;
+    }
+
+    .tag {
+      width: 80%;
+    }
+
+
+}
+
+/* ===== DARK MODE ===== */
+
+/* body styles */
+
+
+
+ .dark .container {
+    font-family: Arial, sans-serif;
+    background: #161515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+
+
+
+
+ .light {
+ /* min-height: 100vh; */
+  background-color: #ffffff;
+  color: #000;
+  transition: 0.3s ease;
+ }
+
+.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* position button top right and toggle styles for button */
+
+.dark-toggle {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 100px;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+.dark .dark-toggle {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+/* form styles */
+
+
+.dark .form-container {
+    background-color: #1e1e1e; 
+    border-bottom: 5px solid gray;
+}
+
+.dark input {
+    background-color: #1e1e1e; 
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.dark input:focus {
+    border: 3px solid #bac9d6;
+    background-color: #968181;
+}
+
+.dark .tag {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark .tag:hover {
+    background-color: #555;
+}
+
+.dark .job-status {
+    background-color: #1e1e1e;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.dark .submit-data {
+    background-color: #bb4444;
+}
+
+.dark .submit-data:hover {
+    background-color: #dd5555;
+}
+
