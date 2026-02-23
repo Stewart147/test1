@@ -1,0 +1,22 @@
+
+.job-column {
+   font-family: Arial, sans-serif;
+   font-size: 12px;
+   font-weight: 300;
+   color: #a88686;
+   background-color: #fff;
+   padding: 0px 20px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+} 
+
+.heading-status {
+    display: flex;
+    justify-content: start; 
+    align-items: center;
+} 
+
+.status-image {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
