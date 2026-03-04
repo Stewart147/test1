@@ -1,0 +1,52 @@
+
+.job-manager {
+    margin: 100 auto;
+}
+
+form {
+    margin: 100px 0px;
+}
+
+input, select, button {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+
+
+
+
+.job-columns {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: wheat;
+    width: auto;
+    height: auto;
+} 
+
+.category-buttons {
+  margin: 10px 0;
+}
+
+.category-buttons button {
+  margin-right: 8px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.category-buttons button.active {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+}
