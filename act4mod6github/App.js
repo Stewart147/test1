@@ -24,7 +24,7 @@ function JobManager() {
       categories,
       status
     };
-    // ... spread operator (immutable uddate) copies all old items then adds new items at end
+    // ... spread operator (immutable update) copies all old items then adds new items at end
     setJobs([...jobs, newJob]);
     // call reset() function
     resetForm();
