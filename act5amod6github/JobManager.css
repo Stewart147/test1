@@ -1,0 +1,148 @@
+
+/* Main container */
+
+.job-manager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 900px;
+    background-color: aqua;
+    border-radius: 8px;
+}
+
+
+/* Input */
+
+input {
+    margin: 20px 0;
+    padding: 8px 10px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+/* Horizontal form layout */
+
+.form-horz {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* Category buttons */
+
+.category-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.category-buttons button {
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+
+/* Selected categories preview */
+
+.category-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.category-tag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 6px;
+}
+
+.category {
+    margin-right: 8px;
+}
+
+
+/* Job columns */
+
+.job-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+/* Individual column */
+
+.job-column {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    min-height: 200px;
+}
+
+
+
+
+/* JobCard default background (in JobManager.css) */
+.job-card {
+  background-color: white; /* default */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.categories {
+    margin-bottom: 8px;
+}
+
+
+/* Buttons */
+
+button {
+    cursor: pointer;
+}
+
+.addbtn {
+    padding: 8px 12px;
+}
+
+
+/* Mobile layout */
+
+@media screen and (max-width: 600px) {
+
+    .job-manager {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .form-horz {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .job-columns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input {
+        text-align: center;
+        width: 100%;
+    }
+
+}
