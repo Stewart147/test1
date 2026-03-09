@@ -1,0 +1,42 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#header {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+#header img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  background-color: transparent;
+}
+
+#header h1 {
+  font-size: 1.5rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  #header {
+    margin: 2rem auto;
+  }
+
+  #header img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  #header h1 {
+    font-size: 1.4rem;
+  }
+
+  #header p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+}
