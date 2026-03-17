@@ -1,0 +1,134 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Page layout */
+/*body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+} */
+
+/* Main container */
+/*.investment-calculator {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 700px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+} */
+
+/* Header */
+/*.investment-calculator h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c7be5;
+} */
+
+/* Input grid */
+/*.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+} */
+
+/* Input group */
+/*.form-group {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* Labels */
+/*.form-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 600;
+} */
+
+/* Inputs */
+/*.form-group input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+} */
+
+/* Input focus effect */
+/*.form-group input:focus {
+  outline: none;
+  border-color: #2c7be5;
+  box-shadow: 0 0 3px rgba(44,123,229,0.5);
+} */
+
+/* Buttons */
+/*button {
+  grid-column: span 2;
+  padding: 10px;
+  background-color: #2c7be5;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+} */
+
+/*button:hover {
+  background-color: #1a5fcc;
+} */
+
+/* Results section */
+/*.results {
+  margin-top: 20px;
+} */
+
+/* Table styling */
+/*table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th {
+  background-color: #2c7be5;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
+
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+} */
+
+/* Zebra rows */
+/*tr:nth-child(even) {
+  background-color: #f9f9f9;
+} */
+
+/* Error message */
+/*.error-message {
+  color: red;
+  margin-top: 10px;
+} */
+
+body {
+  margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
