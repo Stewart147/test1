@@ -1,0 +1,39 @@
+.movieheader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie_filter_item {
+    list-style: none;
+    padding: 8px;
+}
+
+.movie_shows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie_sorting {
+    border: black;
+    outline: none;
+    font-size: 17px;
+    font-family: inherit;
+    height: 30px;
+    padding: 0 5px;
+    margin: 0 12px;
+} 
+
+
+
+
+ 
